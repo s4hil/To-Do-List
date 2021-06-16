@@ -3,13 +3,26 @@
 <head>
 	<title>To Do List</title>
 	<link rel="icon" href="favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-	<div class="container-fluid">
-		
-	</div>
+	<section class="wrapper">
+		<div class="toDo-container">
+			<header class="main-head">To Do App</header>
+			<div class="input-box">
+				<input type="text" class="toDo-text form-control">
+				<button class="addToDo btn btn-success">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<div class="toDos"></div>
+			<footer class="main-footer">You have &nbsp; <div id="tasksLen">0</div>&nbsp; unfinished task(s).</footer>
+		</div>
+	</section>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
